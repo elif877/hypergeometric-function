@@ -1,0 +1,14 @@
+[project]
+name = "hypergeometric-function"
+version = "0.1.0"
+description = "Evaluates the Gaussian hypergeometric function 2F1(a,b;c;z) via convergent series and analytic continuation."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
