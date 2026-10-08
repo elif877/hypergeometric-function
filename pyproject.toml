@@ -1,6 +1,6 @@
 [project]
 name = "hypergeometric-function"
-version = "0.1.0"
+version = "0.1.1"
 description = "Evaluates the Gaussian hypergeometric function 2F1(a,b;c;z) via convergent series and analytic continuation."
 requires-python = ">=3.10"
 dependencies = []
