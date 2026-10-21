@@ -55,3 +55,10 @@ series converges.  Complex arguments are not supported, and the branch cut
 * `hypergeometric_2f1(a: float, b: float, c: float, z: float) -> float`
 
 No other names are part of the public API.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
